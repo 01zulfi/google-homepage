@@ -1,18 +1,70 @@
-#Google-Logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-#Nav-Bar {
+
+body {
     margin: 0;
     padding: 0;
-    font-size: 0.8em;
-    list-style-type: none;
-    width: 0%;
-    height: 1em;
+    height: 100%;
+    display: grid;
+    
+    grid-template-rows: 1fr 10% auto min-content;
+    grid-template-columns: auto;
+    grid-template-areas: "Nav-Bar"
+                         "Google-Logo"
+                         "Search-Bar"
+                         "Footer";     
 }
 
-li {
-    float: left;
+
+
+
+.Nav-Bar {
+    list-style: none;
+    grid-area: Nav-Bar;   
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.Nav-Item{
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+#Google-Logo {
+    grid-area: Google-Logo;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+        
+}   
+
+#search-bar {
+    grid-area: Search-Bar;
+    display: flex;
+    justify-content: center;
+}
+
+#search-bar input[type="search"]{
+    
+    border-radius: 10px;
+    height: 30px;
+    width: 600px;
+    margin-top: 30px;
+    
+    
+}
+
+#search-icon {
+    opacity: 0.3;
+    position: relative;
+    right: 592px;
+    top: 33px;
+}
+
+.footer{
+    list-style: none;
+    grid-area: Footer;
+    display: flex;
+    justify-content: row;
+    align-items: center;
 }
