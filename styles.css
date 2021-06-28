@@ -1,16 +1,20 @@
-
+html {
+    height: 100%;
+    width: 100%;
+}
 
 body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
     display: grid;
-    
-    grid-template-rows: 1fr 10% auto min-content;
-    grid-template-columns: auto;
+    grid-template-rows: 5% 20% 15% 45% auto;
+    grid-template-columns: 100%;
     grid-template-areas: "Nav-Bar"
                          "Google-Logo"
                          "Search-Bar"
+                         "Buttons"
                          "Footer";     
 }
 
@@ -26,11 +30,19 @@ body {
 }
 
 .Nav-Item{
+    font-size: 12px;
     margin-left: 10px;
-    margin-right: 10px
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.Nav-Bar :hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 #Google-Logo {
+    height: 100px;
     grid-area: Google-Logo;
     margin-top: 25px;
     display: flex;
@@ -44,27 +56,109 @@ body {
     justify-content: center;
 }
 
+
 #search-bar input[type="search"]{
     
     border-radius: 10px;
-    height: 30px;
+    height: 40px;
     width: 600px;
     margin-top: 30px;
-    
+    padding-left: 35px;
     
 }
 
 #search-icon {
     opacity: 0.3;
     position: relative;
-    right: 592px;
-    top: 33px;
+    right: 593px;
+    top: 37px;
+}
+
+#Buttons {
+    height: 40px;
+    list-style: none;
+    grid-area: Buttons;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 160px;
+    background-color: #f8f9fa;
+    margin-left: 10px;
+    border-radius: 4%;
+    border-style: none;
+}
+
+#Buttons :hover {
+    box-shadow:0 1px 1px rgba(0,0,0,.1) ;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: silver;
+    
+}
+
+
+
+#Footer{
+    background-color: #f2f2f2;
+}
+
+p {
+    padding-left: 20px;
+    opacity: 0.7;
+    font-size: 15px;   
+    margin-bottom: 0; 
+}
+
+hr {
+    opacity: 0.1;
 }
 
 .footer{
+    opacity: 0.7;
+    margin-bottom: 0;
+    margin-top: 16px;
+    font-size: 13px;
     list-style: none;
     grid-area: Footer;
     display: flex;
     justify-content: row;
     align-items: center;
+    justify-items: center;
 }
+
+.footer :hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-item-a {
+    margin-left: 50px;
+
+}
+.footer-item-b {
+   margin-left: 20px;
+}
+.footer-item-c {
+    margin-left: 20px;
+}
+.footer-item-d {
+    margin-left: 20px;
+}
+.footer-item-e {
+    margin-left: 20px;
+}
+.footer-item-f {
+    margin-left: 20px;
+}
+.footer-item-g {
+    margin-left: 20px;
+}
+
+.footer-item-gap {
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
