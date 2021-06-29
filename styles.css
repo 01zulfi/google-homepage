@@ -19,9 +19,6 @@ body {
                          "Footer";     
 }
 
-
-
-
 .Nav-Bar {
     list-style: none;
     grid-area: Nav-Bar;   
@@ -29,24 +26,27 @@ body {
     flex-direction: row-reverse;
     align-items: center;
 }
+
 .Nav-Item{
     font-size: 12px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
 }
+
 .Nav-Bar :hover {
     cursor: pointer;
     text-decoration: underline;
 }
+
 .Nav-Icon{
     font-size: 12px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
     
-    
 }
+
 .Nav-Icon :hover {
     cursor: pointer;
     text-decoration: none;
@@ -54,6 +54,10 @@ body {
     background-color: rgb(204, 201, 201);
 }
 
+.Nav-Icon :visited{
+    color: inherit;
+    text-decoration-color: white;
+}
 
 #Google-Logo {
     height: 90px;
@@ -70,13 +74,16 @@ body {
     display: flex;
     justify-content: center;
 }
+
 input:hover{
     box-shadow: 0px 1px  1px #888, 0px 0px 0.5px 0.5px #888;
     border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
 }
+
 input:focus {
     outline: none;
 }
+
 #search-bar input[type="search"]{
     font-size: 15px;
     border-radius: 100px;
@@ -87,9 +94,6 @@ input:focus {
     padding-left: 44px;
 }
 
-
-
-
 #search-icon {
     opacity: 0.3;
     position: relative;
@@ -99,7 +103,7 @@ input:focus {
 
 #Buttons {
     font-family: Arial;
-    opacity: 0.85;
+    opacity: 0.;
     height: 40px;
     list-style: none;
     grid-area: Buttons;
@@ -124,8 +128,6 @@ button {
     
 }
 
-
-
 #Footer{
     background-color: #f2f2f2;
     padding-right: 10px;
@@ -142,8 +144,6 @@ hr {
     opacity: 0.1;
 }
 
-
-
 .footer {
     font-size: 13.5px;
     opacity: 0.7;
@@ -155,22 +155,6 @@ hr {
 
 }
 
-/*.footer{
-    opacity: 0.7;
-    margin-bottom: 0;
-    margin-top: 16px;
-    font-size: 13px;
-    list-style: none;
-    grid-area: Footer;
-    display: flex;
-    justify-content: row;
-    align-items: center;
-    justify-items: center;
-}
-*/
-
-
-
 .footer-item-a {
     list-style: none;
     grid-area: part1;
@@ -178,6 +162,7 @@ hr {
     flex-direction: row;
     
 }
+
 .footer-item-b {
     list-style: none;
    grid-area: part2;
@@ -201,25 +186,3 @@ hr {
     margin-left: 15px;
     padding: 0px;
 }
-/*
-.footer-item-c {
-    margin-left: 20px;
-}
-.footer-item-d {
-    margin-left: 20px;
-}
-.footer-item-e {
-    margin-left: 20px;
-}
-.footer-item-f {
-    margin-left: 20px;
-}
-.footer-item-g {
-    margin-left: 20px;
-}
-
-.footer-item-gap {
-    margin-left: 10em;
-    margin-right: 10em;
-}*/
-
